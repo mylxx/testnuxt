@@ -1,0 +1,145 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  font-size: 0.24rem;
+  font-family: PingFangSC-Regular, sans-serif;
+}
+img {
+  border: none;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+body,
+a,
+input,
+button {
+  font-family: PingFangSC-Regular, sans-serif;
+  outline: none;
+  color: #263440;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  cursor: pointer;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+body,
+html {
+  background: rgb(248, 250, 250);
+}
+/* ********旋转屏幕时，字体大小调整的问题********* */
+html,
+body,
+form,
+fieldset,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  -webkit-text-size-adjust: 100%;
+}
+/* ****Input 的placeholder会出现文本位置偏上的情况*** */
+input {
+  line-height: normal;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+a,
+img {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+* {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+// 750px = 100vw => 1px = 0.1333vw => 100px = 13.33vw => 1rem =100px; 100px为基准
+html {
+  font-size: 13.3333vw !important;
+}
+
+
+

@@ -1,0 +1,38 @@
+@function size($size: 10) {
+  @return vw($size);
+}
+
+@function vw($size: 10) {
+  @return $size / 3.75 * 1vw;
+}
+
+@function rem($size: 10) {
+  @return $size / 50 * 1rem;
+}
+
+@mixin img($url, $size: initial, $repeat: no-repeat, $important: null) {
+  background-image: url($url) $important;
+  background-repeat: $repeat;
+  background-size: $size;
+}
+
+/**
+* 根据兼容设置webp格式背景图片
+* @param $url 静态资源路径
+* @param $repeat 图片重叠
+*/
+@mixin webp($url, $repeat: no-repeat) {
+  background-image: url($url);
+  background-repeat: $repeat;
+
+  @at-root :global(.webpa) & {
+    background-image: url(($url+'.webp'));
+  }
+}
+$red: #f00;
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+}
